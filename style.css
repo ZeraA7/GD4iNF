@@ -3,7 +3,7 @@
 body, html {
     margin: 0; padding: 0; background: #000;
     color: #fff; font-family: 'JetBrains Mono', monospace;
-    overflow: hidden; cursor: none; /* Custom virtual cursor logic */
+    overflow: hidden; cursor: none; 
 }
 
 canvas { display: block; position: fixed; inset: 0; z-index: 1; }
@@ -35,7 +35,7 @@ canvas { display: block; position: fixed; inset: 0; z-index: 1; }
 .data-row { margin-bottom: 5px; }
 .data-row span:first-child { font-weight: 800; margin-right: 10px; }
 
-/* The Data Anchors (The Traps) */
+/* The Data Anchors  */
 .data-anchor {
     position: absolute; width: 160px; padding: 12px;
     border: 1px dashed rgba(255,255,255,0.2);
@@ -64,7 +64,6 @@ h1 {
 }
 
 p { font-size: 10px; line-height: 1.6; opacity: 0.6; }
-/* Update these sections in your style.css */
 .telemetry-panel {
     border-left: 2px solid #fff; /* Vertical accent line */
     padding-left: 15px;
@@ -79,4 +78,5 @@ p { font-size: 10px; line-height: 1.6; opacity: 0.6; }
 
 .content-overlay h1 {
     text-shadow: 2px 2px 0px rgba(16, 152, 134, 0.5); /* Subtle glitch shadow */
+
 }
