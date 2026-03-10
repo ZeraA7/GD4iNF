@@ -38,7 +38,7 @@ function draw() {
     });
 
     // Agility drops from 1.0 (free) to 0.05 (trapped) near data
-    let agility = Math.max(0.02, Math.min(1, minSourceDist / 300));
+    let agility = Math.max(0.002, Math.min(1, minSourceDist / 300));
     vDataDisplay.innerText = (1 - agility).toFixed(3);
 
     // Update Virtual Cursor position with agility lag
@@ -96,3 +96,4 @@ function draw() {
 
 
 draw();
+
