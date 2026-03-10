@@ -23,7 +23,7 @@ function resize() {
 }
 window.addEventListener('resize', resize);
 
-// RESET LOGIC: Press 'R' to clear the local density
+// RESET LOGIC: Press 'R' to clear 
 window.addEventListener('keydown', (e) => {
     if (e.key.toLowerCase() === 'r') {
         density = 1;
@@ -36,7 +36,7 @@ window.addEventListener('keydown', (e) => {
 window.addEventListener('mousemove', e => {
     if (isLocked) return;
 
-    // REFINED: Slower accumulation rate (0.0001) for a longer interaction
+    // REFINED: accumulation rate  
     const dxReal = Math.abs(e.clientX - mouse.x);
     const dyReal = Math.abs(e.clientY - mouse.y);
     density += (dxReal + dyReal) * 0.0001; 
@@ -92,7 +92,7 @@ function animate() {
     ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
     ctx.fillRect(0, 0, w, h);
 
-    // SYSTEMIC TRAP: Sensitivity drops more gradually
+    // SYSTEMIC TRAP: Sensitivity
     let sensitivity = 1 / Math.pow(density, 1.2); 
     
     if (sensitivity < 0.0005) {
@@ -120,4 +120,5 @@ function animate() {
 }
 
 resize();
+
 animate();
