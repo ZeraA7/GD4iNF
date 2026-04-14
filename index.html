@@ -2,43 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>01_HORIZON // Singularity OS</title>
-    <link rel="stylesheet" href="style.css">
+    <title>PROJECT_03 // SYSTEM_CATALOG</title>
+    <link rel="stylesheet" href="catalog.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <a href="index.html" class="active">01_HORIZON</a>
-        <a href="physics.html">02_PHYSICS</a>
-        <a href="infinity.html">03_INFINITY</a>
-    </nav>
+    <header class="top-bar">
+        <div class="sys-info">ARCHIVE_MODE: ENABLED</div>
+        <div class="sys-title">PROJECT_03 // SYSTEM_CATALOG</div>
+    </header>
 
-    <div class="telemetry-panel">
-        <div class="data-row"><span>GRAVITY_WELL:</span> <span id="v-data">0.000</span></div>
-        <div class="data-row"><span>DENSITY:</span> <span>STABLE</span></div>
-        <div class="data-row"><span>LIMIT:</span> <span>SCHWARZSCHILD_RADIUS</span></div>
-    </div>
+    <main class="main-catalog">
+        <a href="project1/error.html" class="project-node">
+            <div class="node-preview" style="background-image: url('P1.png');"></div>
+            <div class="node-header">01_ERROR</div>
+            <div class="node-body">
+                <h2>ERROR_SYSTEMS</h2>
+                <p>Exploration of digital glitch, systemic failure, and the disruption of visual order.</p>
+            </div>
+            <div class="btn">[ ACCESS_MODULE ]</div>
+        </a>
 
-    <div class="data-anchor" style="top: 25%; left: 70%;">
-        <div class="label">[ SYSTEM_DATA: MASS_DENSITY ]</div>
-        <div class="status">DETECTION: ACTIVE</div>
-    </div>
+        <a href="infinity/index.html" class="project-node featured">
+            <div class="node-preview" style="background-image: url('P2.jpg');"></div>
+            <div class="node-header">02_INFINITY</div>
+            <div class="node-body">
+                <h2>INFINITY_SINGULARITY</h2>
+                <p>A multi-stage interactive study of infinite density, spaghettification, and user agency loss.</p>
+            </div>
+            <div class="btn">[ LAUNCH_SYSTEM ]</div>
+        </a>
 
-    <div class="data-anchor" style="top: 60%; left: 20%;">
-        <div class="label">[ SYSTEM_DATA: LIGHT_WARP ]</div>
-        <div class="status">DETECTION: ACTIVE</div>
-    </div>
+        <a href="project3/description.html" class="project-node">
+            <div class="node-preview" style="background-image: url('P3.jpg');"></div>
+            <div class="node-header">PROJECT_03_DOC</div>
+            <div class="node-body">
+                <h2>ASSIGNMENT_BRIEF</h2>
+                <p>Conceptual framework and comprehensive documentation for the course archive.</p>
+            </div>
+            <div class="btn">[ READ_BRIEF ]</div>
+        </a>
+    </main>
 
-    <div class="content-overlay">
-        <h1>STRICT_GEOMETRY</h1>
-        <p>
-            The <strong>Event Horizon</strong> is the theoretical, "point of no return" boundary surrounding a black hole, beyond which the gravitational pull is so intense that nothing, not even light, can escape.
-            In this phase, we establish the <strong>Grid</strong> the fundamental structure of information. 
-            The system is ordered, but the first signs of gravitational lensing appear at the cursor. 
-        </p>
-    </div>
-
-    <canvas id="c1"></canvas>
-    <script src="script1.js"></script>
+    <footer class="bottom-bar">
+        PROJECT_03: DOCUMENTATION // OCAD UNIVERSITY // VISUAL COMMUNICATION // 2026
+    </footer>
 </body>
 </html>

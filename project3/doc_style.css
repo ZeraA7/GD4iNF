@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;800&display=swap');
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-y: auto; /* Ensures the professor can scroll the brief */
+}
+
+/* Navigation HUD */
+.top-nav, .bottom-nav {
+    padding: 20px 40px;
+    font-size: 10px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.bottom-nav {
+    position: relative;
+    border-bottom: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 60px;
+}
+
+.back-link {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.back-link:hover { opacity: 0.5; }
+
+/* Content Layout */
+.brief-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 40px;
+}
+
+.brief-header {
+    margin-bottom: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 40px;
+}
+
+.label { font-size: 10px; color: #ff3e3e; margin-bottom: 10px; }
+
+h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin: 0 0 20px 0;
+    font-weight: 800;
+}
+
+.intro {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Section Styling */
+.brief-content {
+    margin-bottom: 60px;
+}
+
+.category {
+    font-size: 10px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    opacity: 0.4;
+    border-left: 2px solid #fff;
+    padding-left: 10px;
+}
+
+p {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+strong { color: #fff; font-weight: 800; }
+
+.spec-list {
+    list-style: none;
+    padding: 0;
+}
+
+.spec-list li {
+    font-size: 12px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+    opacity: 0.7;
+}
+
+.spec-list li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: #ff3e3e;
+}

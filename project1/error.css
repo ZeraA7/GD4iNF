@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;800&display=swap');
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0; padding: 0;
+    overflow-x: hidden;
+}
+
+/* --- Layout --- */
+.error-nav { padding: 30px 40px; }
+.error-nav a { color: rgba(255, 255, 255, 0.4); text-decoration: none; font-size: 10px; }
+.error-header { padding: 40px; max-width: 800px; }
+.meta { font-size: 10px; color: #ff3e3e; margin-bottom: 10px; }
+h1 { font-size: 42px; margin: 0; font-weight: 800; letter-spacing: -2px; }
+
+.focus-container { display: flex; flex-direction: column; align-items: center; padding: 60px 40px; }
+.simulation-zone { width: 100%; max-width: 800px; }
+
+/* --- THE DOUBLE EXPOSURE FIX --- */
+.img-frame.double-exposure-engine {
+    position: relative; /* REQUIRED: Keeps ghost inside the box */
+    background: #050505;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.img-base {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.4; /* Faded base layer */
+}
+
+.img-ghost {
+    position: absolute; /* REQUIRED: Stacks it on top of the base */
+    top: 20px;
+    left: 20px;
+    width: calc(100% - 40px); /* Matches base size exactly */
+    z-index: 10;
+    mix-blend-mode: lighten; /* Creates the double-exposure glow */
+    cursor: move;
+    will-change: transform, filter;
+}
+
+.img-tag { position: absolute; top: -10px; left: 20px; background: #000; font-size: 9px; color: #ff3e3e; padding: 0 5px; }
+.interaction-hint { display: block; text-align: center; font-size: 9px; margin-top: 20px; opacity: 0.4; }
+
+.technical-note { max-width: 600px; border-left: 2px solid rgba(255,255,255,0.1); padding-left: 20px; margin-top: 40px; }
+.error-footer { padding: 40px; font-size: 10px; opacity: 0.3; text-align: center; }
